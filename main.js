@@ -4,10 +4,10 @@ function kgALibras(nombre, unidad, peso) {
     }
     if (unidad.toLowerCase() === "kg" || unidad.toLowerCase() === "kilos" || unidad.toLowerCase() === "kilogramos") {
         const pKilo = peso * 0.453592;
-        return `Hola ${nombre} tu peso en kilos es de ${pKilo}`;
+        return `Hola ${nombre} tu peso en kilos es de ${pKilo.toFixed(2)}`;
     } else if (unidad.toLowerCase() === "lb" || unidad.toLowerCase() === "libras") {
         const pLibra = peso * 2.204622;
-        return `Hola ${nombre} tu peso en libras es de ${pLibra}`
+        return `Hola ${nombre} tu peso en libras es de ${pLibra.toFixed(2)}`
     } else {
         return `Error ${unidad} no es una unidad valida`
     }
