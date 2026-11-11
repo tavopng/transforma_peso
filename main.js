@@ -1,3 +1,9 @@
+const inputPeso = document.getElementById("peso")
+const inputNombre = document.getElementById("nombre")
+const inputUnidad = document.getElementById("uni")
+const boton = document.getElementById("boton")
+const parrafo = document.getElementById("result")
+
 function kgALibras(nombre, unidad, peso) {
     if (peso <= 0 || isNaN(peso)) {
         return `Por favor ingrese un peso valido`
@@ -13,8 +19,10 @@ function kgALibras(nombre, unidad, peso) {
     }
 }
 
-const nombre = prompt("introduce tu nombre");
-const unidad = prompt("Indica si quieres transformar a kilos o libras");
-const peso = parseFloat(prompt("Introduce el peso").replace(",", "."));
+boton.addEventListener("click", () => {
+    const pesoT = parseFloat(inputPeso.value.replace(",", "."));
+    const nombreT = inputNombre.value;
+    const unidadT = inputUnidad.value;
 
-console.log(kgALibras(nombre, unidad, peso));
+    parrafo.textContent = kgALibras(nombreT, unidadT, pesoT)
+})
