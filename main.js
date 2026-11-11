@@ -1,4 +1,7 @@
 function kgALibras(nombre, unidad, peso) {
+    if (peso <= 0 || isNaN(peso)) {
+        return `Por favor ingrese un peso valido`
+    }
     if (unidad.toLowerCase() === "kg" || unidad.toLowerCase() === "kilos" || unidad.toLowerCase() === "kilogramos") {
         const pKilo = peso * 0.453592;
         return `Hola ${nombre} tu peso en kilos es de ${pKilo}`;
@@ -12,6 +15,6 @@ function kgALibras(nombre, unidad, peso) {
 
 const nombre = prompt("introduce tu nombre");
 const unidad = prompt("Indica si quieres transformar a kilos o libras");
-const peso = Number(prompt("Introduce el peso"));
+const peso = parseFloat(prompt("Introduce el peso").replace(",", "."));
 
 console.log(kgALibras(nombre, unidad, peso));
