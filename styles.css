@@ -1,0 +1,74 @@
+html {
+    font-family: "Arimo", sans-serif;
+    background-color: #A592FF;
+}
+
+h1 {
+    text-align: center;
+    color: #1E00AB;
+}
+
+.card {
+       width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6645FF;
+    padding: 15px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.card label {
+    text-align: center;
+}
+
+.card span {
+    font-size: 18px;
+    color: #DEFF45
+}
+
+.card input {
+    display: block;
+    margin-bottom: 15px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+}
+
+.card input:focus {
+    outline: none;
+    border-color: #aa33ff;
+}
+
+#uni {
+    margin-bottom: 15px;
+}
+
+select {
+    width: 80px;
+    height: 30px;
+    background-color: #E4DEFF;
+    appearance: none;
+    text-align: center;
+}
+
+#boton {
+    width: 80px;
+    height: 30px;
+    background-color: #2C00F7;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+#boton:hover {
+    background-color: #FF6645;
+}
+
+p {
+    color: #DEFF45;
+    text-align: center;
+}

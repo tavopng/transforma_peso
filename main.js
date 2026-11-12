@@ -7,7 +7,7 @@ const titulo = document.getElementById("titulo")
 
 function kgALibras(nombre, unidad, peso) {
     if (peso <= 0 || isNaN(peso)) {
-        return `Por favor ingrese un peso valido`
+        return `Por favor ingrese un peso válido`
     }
     if (unidad.toLowerCase() === "kg" || unidad.toLowerCase() === "kilos" || unidad.toLowerCase() === "kilogramos") {
         const pKilo = peso * 0.453592;
@@ -16,7 +16,7 @@ function kgALibras(nombre, unidad, peso) {
         const pLibra = peso * 2.204622;
         return `Hola ${nombre} tu peso en libras es de ${pLibra.toFixed(2)}`
     } else {
-        return `Error ${unidad} no es una unidad valida`
+        return `Error ${unidad} no es una unidad válida`
     }
 }
 

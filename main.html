@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 id="titulo">De Libras a Kilos</h1>
-    <div>
-        <label for="nombre">Indica tu nombre <input type="text" id="nombre"></label>
-        <label for="peso">Indica el peso <input type="text" id="peso"></label>
+    <div class="card">
+        <label for="nombre"><span>Indica tu nombre</span> <input type="text" id="nombre"></label>
+        <label for="peso"><span>Indica el peso</span> <input type="text" id="peso"></label>
         <select name="unidad" id="uni">
             <option value="kg">Kilos</option>
             <option value="lb">Libras</option>
