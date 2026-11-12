@@ -3,6 +3,7 @@ const inputNombre = document.getElementById("nombre")
 const inputUnidad = document.getElementById("uni")
 const boton = document.getElementById("boton")
 const parrafo = document.getElementById("result")
+const titulo = document.getElementById("titulo")
 
 function kgALibras(nombre, unidad, peso) {
     if (peso <= 0 || isNaN(peso)) {
@@ -18,6 +19,16 @@ function kgALibras(nombre, unidad, peso) {
         return `Error ${unidad} no es una unidad valida`
     }
 }
+
+inputUnidad.addEventListener("change", () => {
+    const unidadT = inputUnidad.value;
+
+    if (unidadT === "kg") {
+        titulo.textContent = "De Libras a Kilos"
+    } else if (unidadT === "lb") {
+        titulo.textContent = "De Kilos a Libras"
+    }
+})
 
 boton.addEventListener("click", () => {
     const pesoT = parseFloat(inputPeso.value.replace(",", "."));

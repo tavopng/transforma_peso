@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Transforma el peso</h1>
-    <label for="nombre">Indica tu nombre <input type="text" id="nombre"></label>
-    <label for="peso">Indica el peso <input type="text" id="peso"></label>
-    <select name="unidad" id="uni">
-        <option value="kg">Kilos</option>
-        <option value="lb">Libras</option>
-    </select>
-    <button id="boton">Enviar</button>
-    <p id="result"></p>
+    <h1 id="titulo">De Libras a Kilos</h1>
+    <div>
+        <label for="nombre">Indica tu nombre <input type="text" id="nombre"></label>
+        <label for="peso">Indica el peso <input type="text" id="peso"></label>
+        <select name="unidad" id="uni">
+            <option value="kg">Kilos</option>
+            <option value="lb">Libras</option>
+        </select>
+        <button id="boton">Enviar</button>
+        <p id="result"></p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
