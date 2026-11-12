@@ -1,5 +1,5 @@
 # Conversor a Kilos o Libras
-Una página para traducir kilos a libras y viceversa
+Una página para convertir kilos a libras y viceversa
 
 ## Cómo usarla
 1. Indica tu nombre, tu peso, y la unidad a la que quieres convertir
